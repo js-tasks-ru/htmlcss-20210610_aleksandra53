@@ -6,13 +6,21 @@
         <link rel="stylesheet" href="./accordion.css">
     </head>
     <body>
-        <details>
-            <summary>
-                Accordion item
+        <details class="accordion" open>
+            <summary class="accordion__summary">
+                Accordion item 1
             </summary>
-            <p>
-                Hidden content
-            </p>
+            <div class="accordion__content">
+                The quick brown fox jumps over the lazy dog.
+            </div>
+        </details>
+        <details class="accordion">
+            <summary class="accordion__summary">
+                Accordion item 2
+            </summary>
+            <div class="accordion__content">
+                The five boxing wizards jump quickly. Pack my box with five dozen liquor jugs.
+            </div>
         </details>
     </body>
 </html>
