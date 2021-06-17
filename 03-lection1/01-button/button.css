@@ -1,6 +1,6 @@
 /* Стилизация кнопки */
 .button {
-  width: 200px;
+  display: inline-block;
   background: none;
   border: none;
   border-radius: 8px;
@@ -10,12 +10,12 @@
   font-weight: 500;
   font-style: normal;
   text-align: center;
-  padding: 15px;
+  padding: 15px 15px 14px;
+  box-sizing: border-box;
 }
 
 .button[disabled] {
   opacity: 0.5;
-  cursor: default;
   pointer-events: none;
 }
 
@@ -43,4 +43,8 @@
 
 .button_alternate:hover {
   border: 1px solid var(--black);
+}
+
+.button_full_width {
+  width: 100%;
 }
